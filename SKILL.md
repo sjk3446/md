@@ -45,7 +45,7 @@ If the default port is occupied, select another loopback port. Never expose the 
 
 ### Public GitHub Pages interface
 
-The public interface is `https://sjk3446.github.io/markitdown-vault/`. It is static and contains no document-processing backend. On phones and when the companion is unavailable, supported files are converted in-browser and stored in IndexedDB on that device; never add a hosted upload fallback. PDF, DOCX, PPTX, XLS/XLSX, ODS, CSV/TSV, HTML, JSON, XML, EPUB, ZIP, text, and basic image/audio metadata are supported in this browser-local mode. The app always uses Microsoft MarkItDown as its document engine. OCR, LLM enhancement, URLs, transcription, Outlook, and plugins require the Windows companion. When the companion is available, API, upload, search, download, and credential requests go directly to `http://127.0.0.1:8787`. Keep the allowed public origin exact and preserve Private Network preflight support.
+The public interface is `https://sjk3446.github.io/md/`. It is static and contains no document-processing backend. On phones and when the companion is unavailable, supported files are converted in-browser and stored in IndexedDB on that device; never add a hosted upload fallback. PDF, DOCX, PPTX, XLS/XLSX, ODS, CSV/TSV, HTML, JSON, XML, EPUB, ZIP, text, and basic image/audio metadata are supported in this browser-local mode. The app always uses Microsoft MarkItDown as its document engine. OCR, LLM enhancement, URLs, transcription, Outlook, and plugins require the Windows companion. When the companion is available, API, upload, search, download, and credential requests go directly to `http://127.0.0.1:8787`. Keep the allowed public origin exact and preserve Private Network preflight support.
 
 ## Convert and archive
 

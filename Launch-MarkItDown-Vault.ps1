@@ -4,7 +4,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$PublicUrl = "https://sjk3446.github.io/markitdown-vault/"
+$PublicUrl = "https://sjk3446.github.io/md/"
 $StatusUrl = "http://127.0.0.1:8787/api/status"
 $StartScript = Join-Path $PSScriptRoot "scripts\start-web.ps1"
 

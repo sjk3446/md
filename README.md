@@ -2,7 +2,7 @@
 
 Microsoft MarkItDown으로 PDF, PowerPoint, Word, Excel, 이미지, 오디오와 웹 문서를 Markdown으로 변환하고 로컬 카테고리 문서함에서 관리하는 모바일·Windows용 도구입니다.
 
-공개 화면: [https://sjk3446.github.io/markitdown-vault/](https://sjk3446.github.io/markitdown-vault/)
+공개 화면: [https://sjk3446.github.io/md/](https://sjk3446.github.io/md/)
 
 ## 개인정보 보호 구조
 
