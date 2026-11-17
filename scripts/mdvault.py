@@ -20,7 +20,7 @@ from typing import Any, Callable, Iterable
 from urllib.parse import urlparse
 
 
-APP_VERSION = "1.7"
+APP_VERSION = "1.8"
 GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
 CLAUDE_BASE_URL = "https://api.anthropic.com/v1/"
 DEFAULT_OPENAI_MODEL = "gpt-4o-mini"

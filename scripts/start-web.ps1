@@ -10,7 +10,7 @@ $SkillRoot = Split-Path -Parent $PSScriptRoot
 $PythonExe = Join-Path $SkillRoot ".venv\Scripts\python.exe"
 
 if (-not (Test-Path -LiteralPath $PythonExe)) {
-    throw "MarkItDown Vault is not installed. Run $PSScriptRoot\setup.ps1 first."
+    throw "Abdulaziz is not installed. Run $PSScriptRoot\setup.ps1 first."
 }
 
 $Arguments = @(
@@ -25,6 +25,6 @@ if (-not $NoBrowser) {
     $Arguments += "--open"
 }
 
-Write-Host "MarkItDown Vault: http://127.0.0.1:$Port"
+Write-Host "Abdulaziz: http://127.0.0.1:$Port"
 Write-Host "Stop with Ctrl+C."
 & $PythonExe @Arguments

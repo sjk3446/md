@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Loopback-only browser interface for the MarkItDown Vault."""
+"""Loopback-only browser interface for Abdulaziz."""
 
 from __future__ import annotations
 
@@ -59,7 +59,7 @@ PUBLIC_UI_ORIGINS = {
     if origin.strip()
 }
 
-app = FastAPI(title="MarkItDown Vault", docs_url=None, redoc_url=None)
+app = FastAPI(title="Abdulaziz", docs_url=None, redoc_url=None)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=sorted(PUBLIC_UI_ORIGINS),
@@ -603,7 +603,7 @@ async def convert(
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run the local MarkItDown Vault browser app.")
+    parser = argparse.ArgumentParser(description="Run the local Abdulaziz browser app.")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8787)
     parser.add_argument("--vault", type=Path, default=default_vault_path())

@@ -42,6 +42,6 @@ if ($LASTEXITCODE -ne 0) {
     throw "Dependencies were installed, but vault initialization failed."
 }
 
-Write-Host "MarkItDown Vault setup complete."
+Write-Host "Abdulaziz setup complete."
 Write-Host "Run: $PSScriptRoot\mdvault.ps1 status"
 Write-Host "Browser: $PSScriptRoot\start-web.ps1"

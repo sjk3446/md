@@ -58,7 +58,7 @@ function friendlyErrorMessage(error) {
     [/Source does not exist/i, "선택한 원본 파일을 찾을 수 없습니다. 파일이 이동되거나 삭제되지 않았는지 확인해 주세요."],
     [/No stored document matches/i, "조건에 맞는 저장 문서를 찾지 못했습니다."],
     [/Ambiguous document/i, "이름이 비슷한 문서가 여러 개입니다. 문서함에서 원하는 문서를 직접 선택해 주세요."],
-    [/Failed to fetch|NetworkError|Load failed/i, "PC 로컬 엔진에 연결하지 못했습니다. 바탕화면의 MarkItDown Vault를 실행한 뒤 ‘PC 엔진 시작·연결’을 눌러 주세요."],
+    [/Failed to fetch|NetworkError|Load failed/i, "PC 로컬 엔진에 연결하지 못했습니다. 바탕화면의 Abdulaziz를 실행한 뒤 ‘PC 엔진 시작·연결’을 눌러 주세요."],
   ];
   const match = messages.find(([pattern]) => pattern.test(raw));
   return match
@@ -687,7 +687,7 @@ function registerWebMcpTools() {
 
   register({
     name: "read_mark_vault_status",
-    title: "Read MarkItDown Vault status",
+    title: "Read Abdulaziz status",
     description: "Read the local MarkItDown engine, vault location, document count, and provider availability without exposing API keys.",
     inputSchema: { type: "object", properties: {}, additionalProperties: false },
     annotations: { readOnlyHint: true, untrustedContentHint: false },

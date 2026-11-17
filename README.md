@@ -1,4 +1,4 @@
-# MarkItDown Vault
+# Abdulaziz
 
 Microsoft MarkItDown으로 PDF, PowerPoint, Word, Excel, 이미지, 오디오와 웹 문서를 Markdown으로 변환하고 로컬 카테고리 문서함에서 관리하는 모바일·Windows용 도구입니다.
 
@@ -25,7 +25,7 @@ Windows 브라우저 ──► 127.0.0.1 로컬 MarkItDown ──► 사용자\M
 1. 저장소의 **Code → Download ZIP**을 선택합니다.
 2. ZIP 파일의 압축을 풉니다.
 3. `Install-Windows.cmd`를 더블클릭합니다.
-4. 설치가 끝나면 바탕 화면의 **MarkItDown Vault** 바로가기를 사용합니다.
+4. 설치가 끝나면 바탕 화면의 **Abdulaziz** 바로가기를 사용합니다.
 
 Python 3.10-3.13이 없으면 Windows Package Manager를 통해 Python 3.12 설치를 시도합니다. 첫 설치에서는 MarkItDown 변환 모듈을 내려받기 때문에 시간이 걸릴 수 있습니다.
 

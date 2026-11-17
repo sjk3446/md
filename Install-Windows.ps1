@@ -50,7 +50,7 @@ if (-not $PythonExe) {
     }
 }
 
-Write-Host "Installing MarkItDown Vault locally..."
+Write-Host "Installing Abdulaziz locally..."
 New-Item -ItemType Directory -Path $InstallRoot -Force | Out-Null
 $Items = @("scripts", "web", "references", "agents", "SKILL.md", "README.md", "LICENSE", "Launch-MarkItDown-Vault.ps1")
 foreach ($Item in $Items) {
@@ -62,23 +62,23 @@ foreach ($Item in $Items) {
 
 & (Join-Path $InstallRoot "scripts\setup.ps1") -PythonCommand $PythonExe
 if ($LASTEXITCODE -ne 0) {
-    throw "MarkItDown Vault setup failed."
+    throw "Abdulaziz setup failed."
 }
 
 $Desktop = [Environment]::GetFolderPath("Desktop")
-$ShortcutPath = Join-Path $Desktop "MarkItDown Vault.lnk"
+$ShortcutPath = Join-Path $Desktop "Abdulaziz.lnk"
 $Shell = New-Object -ComObject WScript.Shell
 $Shortcut = $Shell.CreateShortcut($ShortcutPath)
 $Shortcut.TargetPath = "powershell.exe"
 $Shortcut.Arguments = '-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "' + (Join-Path $InstallRoot "Launch-MarkItDown-Vault.ps1") + '"'
 $Shortcut.WorkingDirectory = $InstallRoot
-$Shortcut.Description = "Open MarkItDown Vault"
+$Shortcut.Description = "Open Abdulaziz"
 $Shortcut.Save()
 
 $ProtocolRoot = "HKCU:\Software\Classes\markitdown-vault"
 $ProtocolCommand = '"' + "powershell.exe" + '" -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "' + (Join-Path $InstallRoot "Launch-MarkItDown-Vault.ps1") + '" -NoBrowser'
 New-Item -Path $ProtocolRoot -Force | Out-Null
-Set-Item -Path $ProtocolRoot -Value "URL:MarkItDown Vault Local Engine"
+Set-Item -Path $ProtocolRoot -Value "URL:Abdulaziz Local Engine"
 New-ItemProperty -Path $ProtocolRoot -Name "URL Protocol" -Value "" -PropertyType String -Force | Out-Null
 New-Item -Path (Join-Path $ProtocolRoot "shell\open\command") -Force | Out-Null
 Set-Item -Path (Join-Path $ProtocolRoot "shell\open\command") -Value $ProtocolCommand
