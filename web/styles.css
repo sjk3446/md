@@ -1,18 +1,18 @@
 :root {
-  --ink: #162033;
-  --muted: #657087;
-  --line: #dfe4ed;
-  --surface: #ffffff;
-  --canvas: #f3f5f8;
-  --navy: #111b2e;
-  --navy-soft: #1b2840;
-  --blue: #275ee7;
-  --blue-dark: #1947be;
-  --blue-wash: #eef3ff;
-  --green: #14926b;
-  --amber: #b76a10;
-  --danger: #bd3d3d;
-  --shadow: 0 14px 40px rgba(18, 31, 55, .09);
+  --ink: #342820;
+  --muted: #76685d;
+  --line: #e5d8c8;
+  --surface: #fffaf2;
+  --canvas: #faf3e8;
+  --navy: #342820;
+  --navy-soft: #4a3529;
+  --blue: #b86443;
+  --blue-dark: #994b32;
+  --blue-wash: #f8e9dc;
+  --green: #507a57;
+  --amber: #a8732c;
+  --danger: #ad433b;
+  --shadow: 0 14px 40px rgba(76, 43, 25, .1);
   --radius: 14px;
   font-family: "Segoe UI", "Noto Sans KR", Arial, sans-serif;
   color: var(--ink);
@@ -405,4 +405,70 @@ dialog::backdrop { background: rgba(10,18,32,.55); backdrop-filter: blur(3px); }
   .main-column .credential-save,
   .main-column .credential-delete { min-height: 44px; }
   .preview-actions { flex-wrap: wrap; justify-content: flex-end; }
+}
+
+/* Desert dusk: warm stone surfaces, terracotta actions, and restrained geometric ornament. */
+.sidebar { position: sticky; isolation: isolate; background: linear-gradient(160deg, #342820, #251d19); border-right: 1px solid #65432d; }
+.sidebar::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: .42; background-image: repeating-linear-gradient(45deg, transparent 0 31px, rgba(209,163,92,.1) 31px 32px, transparent 32px 63px), repeating-linear-gradient(-45deg, transparent 0 31px, rgba(209,163,92,.1) 31px 32px, transparent 32px 63px); }
+.brand-mark { width: 42px; height: 42px; border: 1px solid #deb474; border-radius: 50% 50% 11px 11px; background: #b86443; color: #fff9ed; font: 700 25px Georgia, serif; box-shadow: 0 4px 16px rgba(0,0,0,.18); }
+.brand strong { color: #fff3de; font: 700 20px Georgia, serif; letter-spacing: .01em; }
+.brand small { color: #d4b58c; }
+.nav-item { color: #e1cdb3; }
+.nav-item:hover { background: rgba(255,235,209,.1); }
+.nav-item.active { background: #5a3829; box-shadow: inset 3px 0 #d1a35c; }
+.nav-item.active em, .nav-item em { background: #694832; color: #ffe6bf; }
+.sidebar-foot { border-top-color: rgba(231,196,151,.25); }
+.local-badge, .vault-path code { color: #dec9ac; }
+.vault-path span { color: #c9aa83; }
+.local-badge span { background: #82aa78; box-shadow: 0 0 0 4px rgba(130,170,120,.15); }
+.topbar { background: rgba(255,249,239,.94); border-bottom: 1px solid #d9c3a4; box-shadow: 0 3px 14px rgba(84,50,28,.04); }
+.eyebrow, .meta-label { color: #9a764a; }
+.version-button, .status-pill, .icon-button, .powered-mark { background: #fffaf2; }
+.version-button { color: #805b41; }
+.version-button:hover, .icon-button:hover { border-color: #cda880; background: #fff3e2; }
+.status-pill.ready i { background: var(--green); }
+main { background-image: radial-gradient(circle at 96% 4%, rgba(209,163,92,.09), transparent 29%); }
+.section-intro h2::after { content: ""; display: block; width: 45px; height: 3px; margin-top: 8px; border-radius: 99px; background: #d1a35c; }
+.panel, .job-card, .document-row { background: var(--surface); border-color: var(--line); box-shadow: 0 5px 17px rgba(84,50,28,.045); }
+.panel { border-top: 2px solid #d1a35c; }
+.privacy-guarantee { border-color: #d5c3a2; border-left-color: #b86443; background: #f8edda; box-shadow: 0 7px 22px rgba(126,75,41,.07); }
+.privacy-lock { background: #a86a45; border-radius: 50% 50% 8px 8px; }
+.privacy-guarantee strong, .privacy-guarantee p b { color: #60402c; }
+.privacy-guarantee p { color: #6f5946; }
+.local-only-seal { border-color: #ceb28a; background: #fff8e9; color: #6b6b3f; }
+.companion-banner { border-color: #dec5a6; background: linear-gradient(110deg, #f6e7d2, #fff7ea); box-shadow: 0 8px 24px rgba(133,82,47,.08); }
+.companion-copy p, .companion-copy ol, .connection-feedback { color: #6d5748; }
+.dropzone { border-color: #cdb59a; background: #fffcf6; }
+.dropzone:hover, .dropzone.dragging { border-color: #b86443; background: #fbebdf; }
+.drop-icon { border-color: #e3ccb1; background: #fff6e9; border-radius: 50% 50% 10px 10px; }
+.base-engine-card { border-color: #d8b98e; background: linear-gradient(120deg, #f9eddb, #fffbf1); }
+.base-engine-icon { background: #a56b3c; border-radius: 50% 50% 8px 8px; }
+.base-engine-copy > span, .base-engine-copy strong { color: #70492e; }
+.base-engine-copy small { color: #7c634e; }
+.base-engine-card > em { background: #fff8e9; color: #81552d; }
+.provider-card { background: #fffcf7; }
+.provider-card:hover, .document-row:hover { border-color: #d1a35c; }
+.provider-card.selected { border-color: #b86443; background: #f8e9dc; }
+.provider-card.unavailable { background: #eee9e1; }
+.provider-top em { color: #6b7541; }
+input[type="text"], input[type="password"], input[type="url"], input[type="search"], select { border-color: #ddcbb8; background: #fffdf8; }
+input:focus, select:focus { box-shadow: 0 0 0 3px rgba(184,100,67,.15); }
+.primary-action { background: linear-gradient(110deg, #a85439, #c7774f); box-shadow: 0 9px 22px rgba(145,72,45,.23); }
+.primary-action:hover { background: #994b32; }
+.primary-action:disabled { background: #c9aa97; }
+.library-sync { border-color: #dec5a6; background: #fff4e7; color: #6f492f; }
+.library-sync-bar { background: #efddc7; }
+.progress-track, .progress-track::-webkit-progress-bar { background: #edddcb; }
+.progress-track::-webkit-progress-value { background: linear-gradient(90deg, #a85439, #d1a35c, #a85439); }
+.job-phase { color: #5d4535; }
+.job-progress-meta strong, .job-percent { color: #86452e; }
+.document-row:hover { box-shadow: 0 5px 14px rgba(84,50,28,.09); }
+dialog::backdrop { background: rgba(37,27,21,.6); }
+.dialog-card, .preview-card { background: #fffaf2; }
+#preview-content { border-color: #e4d4bd; background: #fffcf7; color: #3f3028; }
+.toast { background: #342820; }
+@media (max-width: 680px) {
+  .sidebar { position: fixed; border-right: 0; border-top: 1px solid #9d7144; }
+  .base-engine-card { grid-template-columns: 36px minmax(0, 1fr); }
+  .base-engine-card > em { grid-column: 2; justify-self: start; }
 }
