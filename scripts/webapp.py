@@ -379,6 +379,11 @@ def home() -> FileResponse:
     return FileResponse(WEB_ROOT / "index.html")
 
 
+@app.get("/icon.svg", response_class=FileResponse)
+def app_icon() -> FileResponse:
+    return FileResponse(WEB_ROOT / "icon.svg", media_type="image/svg+xml")
+
+
 @app.get("/api/status")
 def status() -> dict[str, Any]:
     with vault.connect() as db:

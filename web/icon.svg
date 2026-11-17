@@ -1,5 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Abdulaziz">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Abdulaziz 인물 로고">
   <rect width="512" height="512" rx="112" fill="#342820"/>
-  <path d="M92 402V204a164 164 0 0 1 328 0v198H92z" fill="#b86443" stroke="#d1a35c" stroke-width="14"/>
-  <path d="M256 143 370 359h-66l-22-43h-52l-22 43h-66l114-216zm0 74-31 65h62l-31-65z" fill="#fff4df"/>
+  <path d="M83 426V217a173 173 0 0 1 346 0v209H83z" fill="#9a5239" stroke="#d1a35c" stroke-width="13"/>
+  <path d="M124 426c13-54 56-78 132-78s119 24 132 78H124z" fill="#57382a"/>
+  <path d="M151 225c-3-70 41-122 105-122s108 52 105 122l-15 121-42-15-48-29-48 29-42 15-15-121z" fill="#fff0d5"/>
+  <path d="M181 223c3-48 31-87 75-87s72 39 75 87l-12 100c-9 43-30 64-63 64s-54-21-63-64l-12-100z" fill="#cf9465"/>
+  <path d="M167 214c7-69 42-107 89-107s82 38 89 107c-40-24-138-24-178 0z" fill="#fff4e3"/>
+  <path d="M178 198c43-23 113-23 156 0" fill="none" stroke="#4b3026" stroke-width="20" stroke-linecap="round"/>
+  <path d="M199 274c13-9 27-9 40 0m34 0c13-9 27-9 40 0" fill="none" stroke="#4b3026" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="222" cy="285" r="5" fill="#392b25"/>
+  <circle cx="290" cy="285" r="5" fill="#392b25"/>
+  <path d="M256 287l-8 27 15 4" fill="none" stroke="#a96849" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M193 313c10 48 33 84 63 84s53-36 63-84c-17 5-33 8-45 8-8 0-14 5-18 12-4-7-10-12-18-12-12 0-28-3-45-8z" fill="#4b3026"/>
+  <path d="M237 343c12 7 26 7 38 0" fill="none" stroke="#ae754e" stroke-width="5" stroke-linecap="round"/>
 </svg>

@@ -410,7 +410,8 @@ dialog::backdrop { background: rgba(10,18,32,.55); backdrop-filter: blur(3px); }
 /* Desert dusk: warm stone surfaces, terracotta actions, and restrained geometric ornament. */
 .sidebar { position: sticky; isolation: isolate; background: linear-gradient(160deg, #342820, #251d19); border-right: 1px solid #65432d; }
 .sidebar::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: .42; background-image: repeating-linear-gradient(45deg, transparent 0 31px, rgba(209,163,92,.1) 31px 32px, transparent 32px 63px), repeating-linear-gradient(-45deg, transparent 0 31px, rgba(209,163,92,.1) 31px 32px, transparent 32px 63px); }
-.brand-mark { width: 42px; height: 42px; border: 1px solid #deb474; border-radius: 50% 50% 11px 11px; background: #b86443; color: #fff9ed; font: 700 25px Georgia, serif; box-shadow: 0 4px 16px rgba(0,0,0,.18); }
+.brand-mark { width: 42px; height: 42px; flex: 0 0 42px; overflow: hidden; border: 1px solid #deb474; border-radius: 13px; background: #342820; box-shadow: 0 4px 16px rgba(0,0,0,.18); }
+.brand-mark img { display: block; width: 100%; height: 100%; }
 .brand strong { color: #fff3de; font: 700 20px Georgia, serif; letter-spacing: .01em; }
 .brand small { color: #d4b58c; }
 .nav-item { color: #e1cdb3; }
@@ -423,12 +424,16 @@ dialog::backdrop { background: rgba(10,18,32,.55); backdrop-filter: blur(3px); }
 .local-badge span { background: #82aa78; box-shadow: 0 0 0 4px rgba(130,170,120,.15); }
 .topbar { background: rgba(255,249,239,.94); border-bottom: 1px solid #d9c3a4; box-shadow: 0 3px 14px rgba(84,50,28,.04); }
 .eyebrow, .meta-label { color: #9a764a; }
+.topbar .eyebrow { color: #a35b3d; font: 700 19px/1.2 "Traditional Arabic", "Noto Naskh Arabic", "Segoe UI", serif; letter-spacing: 0; }
 .version-button, .status-pill, .icon-button, .powered-mark { background: #fffaf2; }
 .version-button { color: #805b41; }
 .version-button:hover, .icon-button:hover { border-color: #cda880; background: #fff3e2; }
 .status-pill.ready i { background: var(--green); }
 main { background-image: radial-gradient(circle at 96% 4%, rgba(209,163,92,.09), transparent 29%); }
 .section-intro h2::after { content: ""; display: block; width: 45px; height: 3px; margin-top: 8px; border-radius: 99px; background: #d1a35c; }
+.arabic-brand { display: flex; align-items: center; gap: 13px; margin: 0 0 15px; }
+.arabic-brand img { width: 58px; height: 58px; flex: 0 0 58px; border: 1px solid #d1a35c; border-radius: 17px; box-shadow: 0 5px 15px rgba(69,39,24,.16); }
+.arabic-brand span { color: #8a4b33; font: 700 31px/1.2 "Traditional Arabic", "Noto Naskh Arabic", "Segoe UI", serif; unicode-bidi: isolate; }
 .panel, .job-card, .document-row { background: var(--surface); border-color: var(--line); box-shadow: 0 5px 17px rgba(84,50,28,.045); }
 .panel { border-top: 2px solid #d1a35c; }
 .privacy-guarantee { border-color: #d5c3a2; border-left-color: #b86443; background: #f8edda; box-shadow: 0 7px 22px rgba(126,75,41,.07); }
@@ -469,6 +474,9 @@ dialog::backdrop { background: rgba(37,27,21,.6); }
 .toast { background: #342820; }
 @media (max-width: 680px) {
   .sidebar { position: fixed; border-right: 0; border-top: 1px solid #9d7144; }
+  .arabic-brand { margin-bottom: 13px; }
+  .arabic-brand img { width: 50px; height: 50px; flex-basis: 50px; border-radius: 15px; }
+  .arabic-brand span { font-size: 29px; }
   .base-engine-card { grid-template-columns: 36px minmax(0, 1fr); }
   .base-engine-card > em { grid-column: 2; justify-self: start; }
 }

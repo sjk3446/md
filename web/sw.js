@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_NAME = "markitdown-vault-mobile-v11";
+const CACHE_NAME = "markitdown-vault-mobile-v12";
 const APP_ASSETS = [
   "./",
   "./index.html",
